@@ -24,4 +24,4 @@ mkcd() {
 [ -n "$XTERM_VERSION" ] && transset-df -a >/dev/null
 
 # Set US International keyboard, no dead keys
-setxkbmap -layout us -variant altgr-intl -option nodeadkeys
+#setxkbmap -layout us -variant altgr-intl -option nodeadkeys
