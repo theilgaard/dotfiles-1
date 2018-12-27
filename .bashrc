@@ -1,5 +1,7 @@
 # Prevent Ctrl-S from freezing the terminal.
-stty -ixon
+#stty -ixon
+
+export TERM=xterm-256color
 
 # Cleaner status
 export PS1="\[$(tput bold)\]\[\033[38;5;24m\]\W\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]\[\033[38;5;10m\]>\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]"
@@ -15,6 +17,9 @@ alias ll="ls -lh"
 alias grep="grep --color=auto"
 alias reset="reset && source ~/.bashrc"
 alias reboot="sudo reboot"
+
+# EPAD CTFBOX
+alias ctf="docker run -it --rm --privileged --net=host -v $(pwd):/home/ctf/chall epadctf/ctfbox"
 
 mkcd() {
   mkdir -p "$@" && cd "$@"
