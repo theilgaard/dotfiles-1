@@ -17,6 +17,9 @@ alias ll="ls -lh"
 alias grep="grep --color=auto"
 alias reset="reset && source ~/.bashrc"
 alias reboot="sudo reboot"
+alias gup="git checkout master && git pull upstream master --recurse-submodules"
+alias g='grep -Irn'
+alias grep='grep --color=auto --exclude-dir=.bzr --exclude-dir=.cvs --exclude-dir=.git --exclude-dir=.hg --exclude-dir=.svn --exclude-dir=.pytest_cache'
 
 # EPAD CTFBOX
 alias ctf="docker run -it --rm --privileged --net=host -v $(pwd):/home/ctf/chall epadctf/ctfbox"
@@ -30,3 +33,4 @@ mkcd() {
 
 # Set US International keyboard, no dead keys
 #setxkbmap -layout us -variant altgr-intl -option nodeadkeys
+
