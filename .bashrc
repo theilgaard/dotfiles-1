@@ -20,6 +20,7 @@ alias reboot="sudo reboot"
 alias gup="git checkout master && git pull upstream master --recurse-submodules"
 alias g='grep -Irn'
 alias grep='grep --color=auto --exclude-dir=.bzr --exclude-dir=.cvs --exclude-dir=.git --exclude-dir=.hg --exclude-dir=.svn --exclude-dir=.pytest_cache'
+alias egrep='egrep --color=auto --exclude-dir=.bzr --exclude-dir=.cvs --exclude-dir=.git --exclude-dir=.hg --exclude-dir=.svn --exclude-dir=.pytest_cache'
 
 # EPAD CTFBOX
 alias ctf="docker run -it --rm --privileged --net=host -v $(pwd):/home/ctf/chall epadctf/ctfbox"
